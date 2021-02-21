@@ -1,0 +1,70 @@
+.hide {
+    position: absolute;
+    left: -200px;
+}
+
+.name-hide {
+    display: none;
+}
+
+.done-toggle {
+    visibility: hidden;
+}
+
+.todo-toggle__hide {
+    visibility: hidden;
+    animation: 0.2s motion-off linear;
+}
+
+.todo-toggle__show {
+    visibility: visible;
+    animation: 0.2s motion-on linear;
+}
+
+@keyframes motion-on {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+@keyframes motion-off {
+    0% {
+        opacity: 1;
+    }
+    100% {
+        opacity: 0;
+    }
+}
+
+.align {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.done-margin {
+    margin-bottom: 10px;
+    margin-top: 20px;
+}
+.done-toggle {
+    position: absolute;
+    top: 47px;
+    background-color: bisque;
+    left: 0px;
+    width: 200px;
+    height: 87%;
+}
+
+.toggle__box {
+    position: relative;
+}
+.todo-list {
+    position: absolute;
+    top: 47px;
+    left: 0px;
+    width: 200px;
+    height: 87%;
+}

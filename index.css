@@ -1,0 +1,174 @@
+.JS-main-box {
+    margin-top: 30px;
+}
+
+.todo-form {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin: 5px 10px;
+}
+
+.js-name-form__input {
+    border : none;
+    background-color: beige;
+    border-radius: 10px;
+    border-bottom: 2px solid rgba(0,0,0,0.2);
+    padding: 10px 20px;
+    font-size: 25px;
+}
+
+.js-name-form__input:focus {
+    outline: none;
+}
+
+.form, .greetings, .name-toggle-box{
+    display: none;
+}
+
+.showing {
+    display: block;
+}
+
+.js-input {
+    padding: 15px 30px;
+    font-size: 20px;
+    border: none;
+    border-radius: 5px;
+    box-shadow: 1px 2px 3px rgba(0,0,0,0.4);
+    background: linear-gradient(30deg, pink, pink,  bisque,bisque,  bisque);
+    text-align: center;
+    font-weight: 600;
+}
+
+.js-toDoForm {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+
+
+
+
+.todo-border {
+    border-top: 2px solid rgba(0,0,0,0.35);
+    width: 130px;
+    margin-left: 11.25px;
+    margin-top: 5px;
+    margin-bottom: 10px;
+
+}
+
+.todo-ul-box {
+    text-align: center;
+}
+
+.js-todo{
+    padding: 10px 20px;
+    margin: 10px;
+    width: 137px;
+    border: none;
+    border-radius: 5px;
+    box-shadow: 0px 0px 1px 2px rgb(228, 123, 141);
+    background-color: white;
+
+}
+
+.Pending-ul li, .finished-ul li {
+    margin: 10px 0px;
+    background-color: white;
+    border: solid 2px black;
+    padding: 3px;
+    text-align: center;
+    border-radius: 5px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 5px 10px;
+}
+
+
+.Pending-ul, .finished-ul {
+    display: flex;
+    flex-direction: column;
+}
+
+.Pending-ul li:first-child, .finished-ul li:first-child {
+    margin-top: 10px;
+}
+
+.Pending-ul li:last-child, .finished-ul li:last-child {
+    margin-bottom: 100px;
+}
+
+.Pending-ul li span, .finished-ul li span {
+    margin: 5px 0px;
+}
+
+.Pending-ul li button, .finished-ul li button {
+    width: 30%;
+    margin: 5px 0px;
+}
+
+
+
+
+.js-greetings {
+    font-size: 15px;
+    font-weight: 600;
+    padding: 5px 10px;
+}
+
+
+/* name box */
+.name-box {
+    display: flex;
+    align-items: center;
+    position: absolute;
+    background-color: #FFDAB9 ;
+    width:180px;
+    height: 38px;
+    padding: 10px 10px;
+    padding-bottom: 22px;
+    top: 845px;
+    left: 85px;
+}
+
+.name-box__img {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    margin-top: 3px;
+}
+
+.name-box__online {
+    background-color: #FFD2C4;
+    width: 14px;
+    height: 14px;
+    border-radius: 50%;
+    position: absolute;
+    left: 38px;
+    top: 35px;
+    margin-top: 3px;
+}
+
+.dot {
+    width: 10px;
+    height: 10px;
+    background-color: #43b483;
+    border-radius: 50%;
+    position: absolute;
+    left: 2px;
+    top: 2px;
+}
+
+.name-box_patch {
+    position: absolute;
+    width: 1000%;
+    height: 10px;
+    background: linear-gradient(10deg,  #FFB7C5, #ffdab9, #ffdab9, #ffdab9, #FFB7C5);
+    bottom:0px;
+    left: 0px;
+}

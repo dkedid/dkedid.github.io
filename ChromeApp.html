@@ -1,0 +1,297 @@
+<!DOCTYPE html>
+<html lang="kr">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/FortAwesome/Font-Awesome@5.14.0/css/all.min.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pengscord</title>
+    <link rel="shortcut icon" href="data/4.jpg">
+</head>
+
+
+
+<body class="body-box">
+    <div class="patch">        
+        <div class = "header">
+            <span>Pengscord</span>
+        </div>
+        <div class="menu-box">
+            <ul class="menu-box__menu-box">
+                <a class="menu__a-box" target="_blank" href="https://nomadcoders.co/">
+                    <li>
+                        <img class="menu-box__img menu-box__menu-box__now" src="data/data2/3.JPG">
+                    </li>
+                </a>
+
+                <div class="border-line"></div>
+
+                <a class="menu__a-box todo-anchor" href="#">
+                    <li>
+                        <img class="menu-box__img"  src="https://image.bugsm.co.kr/album/images/350/200268/20026817.jpg">
+                    </li>
+                    <div class="menu-box__text">Done</div>
+                </a>
+
+                <a class="menu__a-box bgm-anchor" onclick="bgm1.play();" href="#">
+                    <li>
+                        <img class="menu-box__img" src="data/8.jpg">
+                    </li>
+                    <div class="menu-box__text">BGM <i class="far fa-play-circle"></i></div>
+                </a>
+
+                <a class="menu__a-box" href="#">
+                    <li>
+                        <img class="menu-box__img" onclick=" bgm1.pause();" src="https://scontent-ssn1-1.xx.fbcdn.net/v/t1.0-9/10660119_538318523006555_1971549971222895643_n.jpg?_nc_cat=111&ccb=2&_nc_sid=2d5d41&_nc_ohc=VWi6jtZv2joAX9Z0GFl&_nc_ht=scontent-ssn1-1.xx&oh=fc59bca8fd009a45c82e3afef50629bf&oe=604636E0">
+                    </li>
+                    <div class="menu-box__text">BGM <i class="fas fa-pause"></i></div>
+                </a>
+
+                <a class="menu__a-box" target="_blank" href="https://comic.naver.com/webtoon/list.nhn?titleId=671270&no=2&weekday=fri">
+                    <li>
+                        <img class="menu-box__img" src="data/23.JPG">
+                    </li>
+                    <div class="menu-box__text">Webtoon</i></div>
+                </a>
+
+                <a class="menu__a-box" href="https://www.google.co.kr/" target="_blank">
+                    <li>
+                        <img class="menu-box__img" src="data/11.JPG">
+                    </li>
+                    <div class="menu-box__text">Google</div>
+                </a>
+
+            </ul>
+            <div class="submenu">
+                <div class="submenu-box">
+                    <div class="submenu-box__title">
+                        <div>📖 To Do List ! !</div><a id = toDoAnchor href="#" onclick="paintDone();"><i class="fas fa-chevron-down fa-sm"></i></a>
+                    </div>
+                    <div class="toggle-box">
+                        <div class="todo-list">
+                            <div class="title">
+                                <form class="todo-form">
+                                    <input class="js-todo" type="text" placeholder="Add task">
+                                    <div class="todo-border"> </div>
+                                </form>
+                            </div>
+                            <div class="todo-ul-box">
+                                <h1>📚 To Do 📚</h1>
+                                <ul class="Pending-ul"></ul>
+                            </div>
+                        </div>
+
+                        <div class="done-toggle">
+                            <div class="title">
+                            </div>
+                            <div class="todo-ul-box">
+                                <h1 class="done-margin">🥂 Done 🥂</h1>
+                                <ul class="finished-ul"></ul>
+                            </div>
+                        </div>
+
+                    </div>  
+                </div>
+                <ul class="js-toDoList">
+                </ul>
+                
+            </div>
+
+            <!-- Name-box -->
+            <div class="name-box">
+                <div class = "name-toggle-box">
+                    <img class="name-box__img" src="data/data2/img.JPG">
+                    <div class="name-box__online">
+                        <div class="dot"> </div>
+                    </div>
+                </div>
+                <div class="name-box_patch"></div>
+                <h4 class="js-greetings greetings"></h4>
+            </div> 
+
+
+
+            <div class="body-header">
+                <a href="#">
+                    <div class="clock-box">
+                        <div class="js-clock">
+                            <div class="js-time-now"></div>
+                        </div>
+                        <i class="fas fa-heart"></i>
+                    </div>
+                </a>
+                
+            </div>
+        </div>
+    </div>
+
+    
+
+
+
+
+
+
+
+
+<!-- Contents -->
+    <div class="cb-box"></div>
+    <div class="t-box">
+        <div class="main-box">
+            <div class="JS-main-box">
+                <form class="js-form form">
+                    <input class="js-input" type="text" placeholder="What is your name?">
+                </form>
+                <h4 class="js-greetings greetings"></h4>
+                <script src="clock.js"></script>
+                <script src="greeting.js"></script>
+                <script src="todo.js"></script>
+            </div>
+            <div class="big-box">
+                <div class="right-box">
+                    <div class="right-box__column">
+                        <div class="content-box">
+                            <div class="cb-title"><div>[D-day]</div><div>Cherry Blossom</div></div>
+                            <div class="blossom-time"></div>
+                        </div>
+                    </div>
+                    <div class="left-box__column">
+                        <div class="img-box">
+                            <script src="bg.js"></script>
+                            <div class="js-weather">
+                                <div class="weather-title">⛅ Weather information</div>
+                                <div class="weather-content">
+                                    <div class="js-weather__main">
+                                        Weather : 로딩중...
+                                    </div>
+                                    <div class="js-weather__temp">
+                                        Temperature : 로딩중...
+                                    </div>
+                                    <div class="js-weather__description">
+                                        Description : 로딩중...
+                                    </div>
+                                    <div class="js-weather__humidity">
+                                        Humidity : 로딩중...
+                                    </div>
+                                    <div class="js-weather__location">
+                                        Location : 로딩중...
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+        <div class="snow"></div>
+        <div class="snow"></div>
+        <div class="snow"></div>
+        <div class="snow"></div>
+        <div class="snow"></div>
+        <div class="snow"></div>
+        <div class="snow"></div>
+        <div class="snow"></div>
+        <div class="snow"></div>
+        <div class="snow"></div>
+        <div class="snow"></div>
+        <div class="snow"></div>
+        <div class="snow"></div>
+        <div class="snow"></div>
+        <div class="snow"></div>
+        <div class="snow"></div>
+        <div class="snow"></div>
+        <div class="snow"></div>
+        <div class="snow"></div>
+        <div class="snow"></div>
+        <div class="snow"></div>
+        <div class="snow"></div>
+        <div class="snow"></div>
+        <div class="snow"></div>
+        <div class="snow"></div>
+        <div class="snow"></div>
+        <div class="snow"></div>
+        <div class="snow"></div>
+        <div class="snow"></div>
+        <div class="snow"></div>
+        <div class="snow"></div>
+        <div class="snow"></div>
+        <div class="snow"></div>
+        <div class="snow"></div>
+        <div class="snow"></div>
+        <div class="snow"></div>
+        <div class="snow"></div>
+        <div class="snow"></div>
+        <div class="snow"></div>
+        <div class="snow"></div>
+        <div class="snow"></div>
+        <div class="snow"></div>
+        <div class="snow"></div>
+        <div class="snow"></div>
+        <div class="snow"></div>
+        <div class="snow"></div>
+        <div class="snow"></div>
+        <div class="snow"></div>
+        <div class="snow"></div>
+        <div class="snow"></div>
+        <div class="snow"></div>
+        <div class="snow"></div>
+        <div class="snow"></div>
+        <div class="snow"></div>
+        <div class="snow"></div>
+        <div class="snow"></div>
+        <div class="snow"></div>
+        <div class="snow"></div>
+        <div class="snow"></div>
+        <div class="snow"></div>
+        <div class="snow"></div>
+        <div class="snow"></div>
+        <div class="snow"></div>
+        <div class="snow"></div>
+        <div class="snow"></div>
+        <div class="snow"></div>
+        <div class="snow"></div>
+        <div class="snow"></div>
+        <div class="snow"></div>
+        <div class="snow"></div>
+        <div class="snow"></div>
+        <div class="snow"></div>
+        <div class="snow"></div>
+        <div class="snow"></div>
+        <div class="snow"></div>
+        <div class="snow"></div>
+        <div class="snow"></div>
+        <div class="snow"></div>
+        <div class="snow"></div>
+        <div class="snow"></div>
+        <div class="snow"></div>
+        <div class="snow"></div>
+        <div class="snow"></div>
+        <div class="snow"></div>
+        <div class="snow"></div>
+        <div class="snow"></div>
+        <div class="snow"></div>
+        <div class="snow"></div>
+        <div class="snow"></div>
+        <div class="snow"></div>
+        <div class="snow"></div>
+        <div class="snow"></div>
+        <div class="snow"></div>
+        <div class="snow"></div>
+        <div class="snow"></div>
+        <div class="snow"></div>
+        <div class="snow"></div>
+        <div class="snow"></div>
+        <div class="snow"></div>
+        <div class="snow"></div>
+        <div class="snow"></div>
+        <div class="snow"></div>
+        <div class="snow"></div>
+        <div class="snow"></div>
+        <div class="snow"></div>
+    <script src="weather.js"></script>
+    <script src="D-day.js"></script>
+    <script src="toggle.js"></script>
+    <script src="bgm.js"></script>
+</body>
+</html>
